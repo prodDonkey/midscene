@@ -28,10 +28,10 @@
   },
   "lint-staged": {
     "*.{md,mdx,json,css,less,scss}": [
-      "npx biome check --diagnostic-level=info --fix"
+      "npx biome check --diagnostic-level=info --no-errors-on-unmatched --fix"
     ],
     "*.{js,jsx,ts,tsx,mjs,cjs}": [
-      "npx biome check --diagnostic-level=info --fix"
+      "npx biome check --diagnostic-level=info --no-errors-on-unmatched --fix"
     ],
     "package.json": "pnpm run check-dependency-version"
   },
